@@ -10,22 +10,22 @@
 </head>
 <body>
   <h1 class="text-3xl font-bold">
-    Hello world!
+    ２ページ目
   </h1>
   <div id="root"></div>
 
   <script type="text/babel">
     const App = () => {
-      const [count, setCount] = React.useState(0);
-      const handleClick = () => setCount(count + 1);
+      const [count, setCount] = React.useState(10);
+      const handleClick = () => setCount(count - 1);
 
       return (
         <div>
           カウント：{count}
           <div>
-            <button onClick={handleClick} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">count up</button>
+            <button onClick={handleClick} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">count down</button>
           </div>
-          <a href="/page2.html" class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">ページ２へ</a>
+          <a href="/index.html" class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">トップへ戻る</a>
         </div>
       );
     };
